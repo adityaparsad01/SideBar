@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch
+} from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -8,6 +13,7 @@ import Products from "./pages/Products";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Support from "./pages/Support";
+import Error from "./pages/Error";
 
 export default function App() {
   return (
@@ -21,6 +27,9 @@ export default function App() {
           <Route path="/team" component={Team} />
           <Route path="/contact" component={Contact} />
           <Route path="/support" component={Support} />
+          <Route>
+            <Redirect to={Error} />
+          </Route>
         </Switch>
       </Router>
     </>
