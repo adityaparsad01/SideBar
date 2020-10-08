@@ -9,7 +9,10 @@
 
 .home,
 .reports,
-.products {
+.products,
+.Team,
+.Support,
+.Contact {
   display: flex;
   height: 90vh;
   align-items: center;

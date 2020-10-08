@@ -18,9 +18,9 @@ export default function App() {
           <Route path="/" component={Home} exact />
           <Route path="/products" component={Products} />
           <Route path="/reports" component={Reports} />
-          <Route path="/reports" component={Team} />
-          <Route path="/reports" component={Contact} />
-          <Route path="/reports" component={Support} />
+          <Route path="/team" component={Team} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/support" component={Support} />
         </Switch>
       </Router>
     </>
