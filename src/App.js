@@ -27,9 +27,7 @@ export default function App() {
           <Route path="/team" component={Team} />
           <Route path="/contact" component={Contact} />
           <Route path="/support" component={Support} />
-          <Route>
-            <Redirect to={Error} />
-          </Route>
+          <Redirect to={Error} />
         </Switch>
       </Router>
     </>
